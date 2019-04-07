@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bot Chat</title>
+</head>
+
+<style>
+body{
+    background: url("http://localhost:8080/botbackground");
+    background-repeat: no-repeat;
+}
+
+.hasil{
+    background: grey;
+    width: 50%;
+    margin-left: 25%;
+    padding-bottom: 35%;
+}
+
+.hasil h1{
+    text-align: center;
+    font: 25px sans-serif;
+}
+
+form{
+    margin-left: 40%;
+    margin-top: 10px;
+}
+
+#done{
+    margin-left: 60px;
+    font: 20px sans-serif;
+    color: blue;
+    margin-top: -10.8%;
+}
+
+#g{
+    margin-left: 10px;
+    font: 20px sans-serif;
+    color: black;
+}
+
+@media screen and (max-width:375px){
+    body{
+    }
+
+    .hasil{
+        margin-top: 15%;
+        width: 70%;
+        padding-bottom: 60%;
+        margin-left: 50px;
+        border: 3px solid orangered;
+    }
+
+    #done{
+        padding-top: -100px;
+    }
+}
+
+</style>
+
+<script>
+var obj = {
+    test : "hai",
+    asw : "asw",
+}
+
+function send(){
+var chat = document.getElementById("chat").value
+
+if(chat == obj["test"]){
+    done.innerHTML = "Berhasil";
+    return
+}else if (chat == obj["asw"]){
+    done.innerHTML = "Jembood";
+}
+}
+</script>
+
+<body>
+    <div class="hasil">
+        <h1>Hasil</h1>
+        <p id="g">Bot-# </p><p id="done"></p>
+    </div>
+    <form>
+    <input type="text" id="chat">
+    <button type="button" onclick="send()">Send</button>
+    </form>
+</body>
+</html>
