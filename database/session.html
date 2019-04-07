@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin Session</title>
+</head>
+
+<style>
+
+h1{
+    width: 100%;
+    background:black;
+    height: 30px;
+    float: left;
+    color: white;
+    font: 25px sans-serif;
+    padding: 25px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin-top: -200px;
+    margin-left: -20px;
+}
+
+.profile{
+    background: grey;
+    width: 30%;
+    margin-top: 15%;
+    height: 500px;
+    border-radius: 20px;
+    border: 4px solid black;
+}
+
+.profile img{
+    margin-left: 28%;
+    margin-top: 10%;
+    border-radius: 50%;
+    border: 3px solid lime;
+    width: 40%;
+}
+
+.profile p{
+    text-align: center;
+    font: 20px sans-serif;
+    color: orangered;
+}
+
+.new{
+    background:rgb(116, 250, 7);
+    width: 40%;
+    padding-bottom: 34%;
+    float: right;
+    margin-top: -38%;
+    margin-right: 22%;
+    border-radius: 24px;
+    border: 3px solid black;
+    opacity: 0.7;
+}
+
+.new h2{
+    font: 20px sans-serif;
+    color: orangered;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: center;
+}
+
+
+#t{
+    float: left;
+    margin-left: 10px;
+    color: blue;
+}
+
+.new img{
+    width: 60%;
+    margin-top: 4%;
+    margin-right: 10%;
+    margin-left: 5px;
+    border: 3px solid white;
+}
+
+#isi{
+    text-decoration: underline;
+    font: 20px sans-serif;
+    text-transform: uppercase;
+    color:teal;
+    text-align: center;
+}
+
+#inf{
+    font: 15px sans-serif;
+    color: darkblue;
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+
+@media screen and (max-width:375px){
+    h1{
+        margin-top: -110px;
+        font: 20px sans-serif;
+        height: 20px;
+    }
+
+    .profile{
+        height: 50%;
+        margin-top: 30%;
+        width: 100%;
+    }
+
+    .new{
+        margin-top: 10%;
+        width: 100%;
+        margin-right: -1%;
+        padding-bottom: 100%;
+    }
+
+    #t{
+        font: 20px sans-serif;
+        margin-left: 100px;
+    }
+}
+
+</style>
+
+<script>
+</script>
+
+<body>
+    <h1>Wellcome Fajar</h1>
+    <div class="profile">
+        <img src="http://localhost:8080/profile" alt="">
+        <p>Name : Fajar Firdaus</p>
+        <p>Status : Programmer</p>
+    </div>
+    <div class="new">
+        <h2>List Tools</h2>
+        <h2 id="t">Admin Search</h2>
+        <img src="http://localhost:8080/adminsearch" alt="">
+        <p id="isi">Information</p>
+        <p id="inf">File Size : kgk tau</p>
+        <p id="inf">Fungsi : cari page admin</p>
+        <h2 id="t">Admin Search</h2>
+        <img src="http://localhost:8080/myhub" alt="">
+        <p id="isi">Information</p>
+        <p id="inf">File Size : kgk tau</p>
+        <p id="inf">Fungsi : sebagai tools installer</p>
+    </div>
+</body>
+</html>

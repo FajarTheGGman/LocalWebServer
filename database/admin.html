@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin Login</title>
+</head>
+
+<style>
+body{
+    background: url("https://images6.alphacoders.com/555/555187.jpg");
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+#username{
+    margin-left: 25%;
+    border: 0px;
+    padding: 20px;
+    border: 2px solid lime;
+    background: lightslategray;
+}
+
+#username:hover{
+    transition: 1s;
+    border-radius: 24px;
+    background: orangered;
+}
+
+
+#password{
+    margin-left: 25%;
+    margin-top: 1%;
+    border: 0px;
+    padding: 20px;
+    border: 2px solid lime;
+    background: lightslategray;
+}
+
+#password:hover{
+    transition: 1s;
+    border-radius: 24px;
+    background: orangered;
+}
+
+.log{
+background: grey;
+padding: 5px;
+width: 35%;
+opacity: 0.7;
+margin-top: 10%;
+margin-left: 30%;
+}
+
+#button{
+    margin-left: 40%;
+    margin-top: 5%;
+    padding: 20px;
+    background: none;
+    border: 3px solid blue;
+    color: white;
+}
+
+#button:hover{
+    transition: 1s;
+    background: greenyellow;
+    border-radius: 24px;
+}
+
+#admin{
+    text-align: center;
+    background: linear-gradient(to right, cyan, lime);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-top: 10%;
+    font: 30px sans-serif;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width:375px){
+    body{
+    }
+
+    .log{
+        background: grey;
+        width: 80%;
+        padding: 10px;
+        margin-left: 10%;
+        margin-top: 35%;
+    }
+
+    #username{
+        margin-left: 40px;
+    }
+
+    #password{
+        margin-left: 40px;
+
+    }
+
+    #admin{
+        font: 30px sans-serif;
+        text-transform: uppercase;
+    }
+
+    #button{
+        margin-left: 100px;
+    }
+}
+
+</style>
+    
+<script>    
+var a = {
+    username : "fajar",
+    password : "google215167"
+}
+
+function log(){
+    var username = document.getElementById("username").value
+    var password = document.getElementById("password").value
+
+        if(username == a["username"] && password == a["password"]){
+            window.location = "http://localhost:8080/admin-session";
+        }
+    }
+</script>
+
+<body>
+    <div class="log">
+    <form>
+        <h1 id="admin">Admin Login</h1>
+        <input type="text" id="username" placeholder="Username">
+        <br>
+        <input type="password" id="password" placeholder="Password"><br>
+    <button type="button" onclick="log()" id="button">Log in</button>
+    </form>
+</div>
+</body>
+
+</html>
