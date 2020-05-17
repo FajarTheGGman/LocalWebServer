@@ -20,3 +20,7 @@
 5.npm install --save fs colors
 6.node server
 </pre>
+
+
+# Buy Me Some Coffe :)
+![donate](https://raw.githubusercontent.com/FajarTheGGman/F-Tools/master/.images/donate.jpeg)
